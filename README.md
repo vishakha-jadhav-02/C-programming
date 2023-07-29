@@ -1,2 +1,2 @@
 # C-programming
-Problems on numbers, digits, strings, Data structures using C Programming language
+Problems on numbers, digits, strings, Pattern printing,  Data structures using C Programming language
