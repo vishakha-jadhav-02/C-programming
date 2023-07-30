@@ -5,7 +5,7 @@
 
 /////////////////////////////////////////////////////
 //
-// Function Name:   CheckDivisible
+// Function Name:   SumFactors
 // Input:           Integer
 // Output:          Integer
 // Description:     return summation of factors 
@@ -35,7 +35,7 @@ int SumFactors(int iNo)
 
 /////////////////////////////////////////////////////
 //
-// Function Name:   CheckDivisible
+// Function Name:   CheckPerfect
 // Input:           Integer
 // Output:          Boolean
 // Description:     check whether input is perfect number 
