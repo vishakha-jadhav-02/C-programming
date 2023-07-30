@@ -13,7 +13,7 @@
 // Date:            30/07/23
 //
 ////////////////////////////////////////////////////
-bool(int No, int SearchD)
+bool ChkDigit(int No, int SearchD)
 {
   int digit = 0;
 
@@ -46,13 +46,25 @@ bool(int No, int SearchD)
 ///////////////////////////////////////////////////
 int main()
 {
-  int Value = 0, iRet = 0;
+  int iValue1 = 0, iValue2 = 0;
+    bool bRet = false;
 
-  printf("Enter number: ");
-  scanf("%d", &Value);
+    printf("Enter number: \n");
+    scanf("%d",&iValue1);
 
-  iRet = SumDigits(Value);
-  printf("Sum of digits is: %d",iRet);
+    printf("Enter the digit (0 to 9):\n");
+    scanf("%d",&iValue2);
+
+    bRet = CheckDigit(iValue1, iValue2);
+
+    if(bRet == true)
+    {
+        printf("%d is present in %d.",iValue2,iValue1);
+    }
+    else
+    {
+        printf("%d is not present in %d.",iValue2,iValue1);
+    }
   
   return 0;
 }
