@@ -1,0 +1,68 @@
+// Accept N numbers from user and display even elements from that N numbers
+
+#include<stdio.h>   
+#include<stdlib.h>  
+
+/////////////////////////////////////////////////////
+//
+// Function Name:   EvenDisplay
+// Input:           Integer Array, Integer
+// Output:          None
+// Description:     Display even numbers 
+// Author:          Vishakha Krishnarao Jadhav
+// Date:            31/07/23
+//
+////////////////////////////////////////////////////
+void EvenDisplay(int Arr[], int iLength)
+{
+    // Step5: Perform the operations on array
+    int iCnt =0;
+    printf("Even Elements are: \n");
+
+    for(iCnt = 0; iCnt < iLength; iCnt++)
+    {
+        if((Arr[iCnt]% 2) == 0)
+        {
+            printf("%d \n",Arr[iCnt]);
+        }       
+    }
+    
+}
+
+////////////////////////////////////////////////////
+// Entry point function
+///////////////////////////////////////////////////
+int main()          
+{
+    int iSize = 0;     
+    int *ptr = NULL;    
+    int iCnt = 0, iRet = 0; 
+
+    // Step1 : Accept the Number of elements from user
+    printf("Enter the number of elements: \n");
+    scanf("%d",&iSize);
+
+    // Step2 : Allocate memory dynamically
+    ptr = (int*)malloc(iSize * sizeof(int));
+
+    // Step3 : Accept the values from user
+    printf("Enter the elements: \n");
+    for(iCnt = 0; iCnt < iSize; iCnt++)
+    {
+        scanf("%d",&ptr[iCnt]);
+    }
+
+    printf("Elements of array are: \n");
+    for(iCnt = 0; iCnt < iSize; iCnt++)
+    {
+        printf("%d\n",ptr[iCnt]);
+    }  
+
+    // Step4 : Pass the array to the function
+    EvenDisplay(ptr,iSize);
+
+    // Step6 : Deallocate the memory of array
+    free(ptr);
+
+    return 0;       
+}
