@@ -17,7 +17,7 @@ int OddCount(int Arr[], int iLength)
 {
   int iCount = 0, iCnt = 0;
 
-  for(iCnt = 0;iCnt < iSize; iCnt++)
+  for(iCnt = 0;iCnt < iLength; iCnt++)
   {
     if((Arr[iCnt] % 2) == 0)
     {
