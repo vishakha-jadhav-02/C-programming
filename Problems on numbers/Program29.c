@@ -50,11 +50,11 @@ int main()
   printf("Elements of array: \n");
   for(iCnt = 0; iCnt < iSize; iCnt++)
   {
-    printf("%d", ptr[iCnt]);
+    printf("%d\t", ptr[iCnt]);
   }
 
   fRet = AvgNumbers(ptr, iSize);
-  printf("Average of numbers is: %f",iRet);
+  printf("\nAverage of numbers is: %f",iRet);
 
   return 0;
 }
