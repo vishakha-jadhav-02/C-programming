@@ -1,0 +1,53 @@
+// Accept Number from user and return the smallest digit from that number
+
+#include<stdio.h>
+
+/////////////////////////////////////////////////////
+//
+// Function Name:   MinimumDigit
+// Input:           Integer
+// Output:          Integer
+// Description:     return minimum digit from input number
+// Author:          Vishakha Krishnarao Jadhav
+// Date:            31/07/23
+//
+////////////////////////////////////////////////////
+int MinimumDigit(int iNo)
+{
+    int iDigit = 0;
+    int iMin = 9;
+
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
+    while(iNo != 0)
+    {
+        iDigit = iNo % 10;
+        if(iDigit < iMin)
+        {
+            iMin = iDigit;
+        }
+        iNo = iNo / 10;
+    }
+    return iMin;
+}
+
+////////////////////////////////////////////////////
+// Entry point function
+///////////////////////////////////////////////////
+int main()
+{
+    int iValue = 0;
+    int iRet = 0;
+
+    printf("Enter number: ");
+    scanf("%d",&iValue);
+
+    iRet = MinimumDigit(iValue);
+
+    printf("Smallest Digit from %d is: %d\n",iValue,iRet);
+
+    return 0;
+}
