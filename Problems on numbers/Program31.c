@@ -20,7 +20,7 @@ int SmallestNum(int *Arr[], int iLength)
 
   for(iCnt = 0; iCnt < iLength; iCnt++)
   {
-    if(Arr[iCnt] < iMax)
+    if(Arr[iCnt] < iMin)
     {
       iMin = Arr[iCnt];
     }
