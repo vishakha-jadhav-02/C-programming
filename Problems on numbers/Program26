@@ -1,0 +1,62 @@
+// Accept N numbers from user and display odd elements from that N numbers
+
+#include<stdio.h>   
+#include<stdlib.h> 
+
+/////////////////////////////////////////////////////
+//
+// Function Name:   OddDisplay
+// Input:           Integer array, Integer
+// Output:          None
+// Description:     Display odd numbers 
+// Author:          Vishakha Krishnarao Jadhav
+// Date:            31/07/23
+//
+////////////////////////////////////////////////////
+void OddDisplay(int Arr[], int iLength)
+{
+    int iCnt =0;
+    printf("Odd Elements are: \n");
+
+    for(iCnt = 0; iCnt < iLength; iCnt++)
+    {
+        if((Arr[iCnt]% 2) != 0)
+        {
+            printf("%d \n",Arr[iCnt]);
+        }   
+    }
+}
+
+////////////////////////////////////////////////////
+// Entry point function
+///////////////////////////////////////////////////
+int main()          
+{
+    int iSize = 0;     
+    int *ptr = NULL;    
+    int iCnt = 0;
+    int iRet = 0; 
+
+    printf("Enter the number of elements: \n");
+    scanf("%d",&iSize);
+
+    ptr = (int*)malloc(iSize * sizeof(int));
+
+    printf("Enter the elements: \n");
+    for(iCnt = 0; iCnt < iSize; iCnt++)
+    {
+        scanf("%d",&ptr[iCnt]);
+    }
+
+    printf("Elements of array are: \n");
+    for(iCnt = 0; iCnt < iSize; iCnt++)
+    {
+        printf("%d\n",ptr[iCnt]);
+    }  
+
+    OddDisplay(ptr,iSize);
+
+    free(ptr);
+
+    return 0;       
+}
