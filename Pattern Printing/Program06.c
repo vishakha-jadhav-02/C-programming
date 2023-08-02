@@ -1,4 +1,4 @@
-// Accept number from user and print that number of alphabets.
+// Accept number from user and print that number of smallcase alphabets.
 // Input: 3
 // Output: a  b  c
 
@@ -9,7 +9,7 @@
 // Function Name:   Display
 // Input:           Integer
 // Output:          None
-// Description:     Display alphabets
+// Description:     Display smallcase alphabets
 // Author:          Vishakha Krishnarao Jadhav
 // Date:            02/08/23
 //
