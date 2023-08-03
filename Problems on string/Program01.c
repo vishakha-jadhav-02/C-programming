@@ -5,7 +5,7 @@
 
 /////////////////////////////////////////////////////
 //
-// Function Name:   Display
+// Function Name:   CheckCapital
 // Input:           Character
 // Output:          Boolean
 // Description:     Check whether input character is capital or not
