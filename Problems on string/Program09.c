@@ -7,7 +7,7 @@
 // Function Name:   strlenCapitalX
 // Input:           String
 // Output:          Integer
-// Description:     return number of letters in string
+// Description:     return number of capital letters in string
 // Author:          Vishakha Krishnarao Jadhav
 // Date:            03/08/23
 //
