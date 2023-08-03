@@ -7,7 +7,7 @@
 // Function Name:   strlenSmall
 // Input:           String
 // Output:          Integer
-// Description:     return number of letters in string
+// Description:     return number of small letters in string
 // Author:          Vishakha Krishnarao Jadhav
 // Date:            03/08/23
 //
