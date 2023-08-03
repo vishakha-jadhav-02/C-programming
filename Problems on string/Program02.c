@@ -36,7 +36,7 @@ int main()
     printf("Enter character: ");
     scanf("%c",&ch);
 
-    bRet = CheckSmall(ch);
+    bRet = CheckCapital(ch);
 
     if(ch == true)
     {
